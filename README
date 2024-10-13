@@ -1,0 +1,13 @@
+Inicializacion del proyecto
+
+1. instala las dependencias, usa el comando:
+
+        npm install
+
+2. Inicia la app con el comando
+
+        npx expo start
+
+3. en la terminal encontraras diferentes opciones para iniciar la aplicacion. 
+
+    Puedes usar un emulador de android (con android studio, por ejemplo) o escanear el codigo QR y usar expo go
