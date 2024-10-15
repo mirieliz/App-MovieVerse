@@ -5,7 +5,7 @@ import { Link} from 'expo-router';
 export default function Welcome() {
     return (
         
-        <View className="flex-1 items-center  bg-violet-950">
+        <View className="flex-1 items-center justify-center bg-violet-950">
         <StatusBar style="auto" />
         {/* <Text className="text-2xl">Este es el welcome page</Text> */}
         <Image source={require("../assets/logo-morado-nbg.png")} />
@@ -15,16 +15,19 @@ export default function Welcome() {
             <Text className="text-white text-lg text-center py-2">Login</Text>
         </TouchableOpacity>
         <TouchableOpacity className="bg-violet-400 text-center rounded-md w-60 h-15 mt-8 ">
-            <Text className="text-white text-lg text-center py-2">Create Acount </Text>
+            {/* <Text className="text-white text-lg text-center py-2">Create Acount </Text> */}
+            <Link href="/create_account" className="text-white mt-8 items-end text-center py-2 ">
+            CREATE ACCOUNT
+            </Link>
         </TouchableOpacity>
-
 {/* 
         <TextInput className="bg-white rounded-md w-60 text-center mt-8 "
             placeholder='your@mail.com'
         />
-        <Link href="/password" className="text-gray-400 mt-8 items-end ">
+         */}
+        <Link href="/create_account" className="text-gray-400 mt-8 items-end ">
             ¿forget your password?
-        </Link> */}
+        </Link>
 
         
         </View>

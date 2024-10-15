@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Welcome from './app/welcome';
+import CreateAccount from './app/create_account';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <View className="flex-1 ">
             <StatusBar style="auto" />
             <Welcome />
+            <CreateAccount/>
       </View>
     </SafeAreaProvider>
     
